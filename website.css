@@ -1,0 +1,133 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f4eaf7;
+}
+
+/* Header */
+.header {
+  background-color: #672a8c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Layout Container */
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #e3d4f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #cbb2dd;
+}
+
+/* Main Content */
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.main-content h2 {
+  color: #572b74;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.destinations {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.destinations h3 {
+  color: #672a8c;
+  margin-bottom: 10px;
+}
+
+.destinations ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.destinations blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #672a8c;
+  padding-left: 10px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0e2f5;
+  border-left: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.right-sidebar h3 {
+  color: #672a8c;
+  margin-bottom: 10px;
+}
+
+.right-sidebar a {
+  color: #572b74;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.right-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.right-sidebar ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #672a8c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}

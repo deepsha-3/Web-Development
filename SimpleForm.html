@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="../form.css" />
+</head>
+<body>
+  <main class="form-wrapper">
+    <h2 class="page-title">Welcome</h2>
+    <p class="intro">Please fill in the following details to register.</p>
+
+    <form method="post" target="_blank">
+
+      <!-- Section 1: Personal Details -->
+      <section class="form-section">
+        <h3>Personal Details</h3>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Deepsha Dumre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create password" minlength="8" maxlength="20" required />
+        <small>Use 8–20 characters with letters, numbers & symbols.</small>
+
+        <label for="phone">Contact No:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+977-9800000000" required />
+
+        <label for="dob">Birth Date:</label>
+        <input type="date" id="dob" name="dob" required />
+      </section>
+
+      <!-- Section 2: Professional Details -->
+      <section class="form-section">
+        <h3>Professional Details</h3>
+
+        <label><input type="radio" name="profession" value="Student"> Student</label>
+        <label><input type="radio" name="profession" value="Teacher"> Teacher</label>
+        <label><input type="radio" name="profession" value="Developer"> Developer</label>
+
+        <br><br>
+
+        <label for="stage">If student, choose your stage:</label>
+        <select name="stage" id="stage">
+          <optgroup label="Primary">
+            <option value="first">First</option>
+            <option value="second">Second</option>
+            <option value="third">Third</option>
+          </optgroup>
+          <optgroup label="Secondary">
+            <option value="first-sec">First Secondary</option>
+            <option value="second-sec">Second Secondary</option>
+            <option value="third-sec">Third Secondary</option>
+          </optgroup>
+        </select>
+
+        <label for="subject">If teacher, subject specialty:</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g. Science, History" />
+
+        <label for="language">If developer, preferred language:</label>
+        <input type="text" id="language" name="language" placeholder="e.g. Python, JavaScript" />
+      </section>
+
+      <!-- Section 3: Additional Details -->
+      <section class="form-section">
+        <h3>Additional Details</h3>
+        <label for="notes">Any Notes:</label>
+        <input type="text" id="notes" name="notes" placeholder="Add anything you'd like" />
+    
+        <label for="hobbies">Hobbies / Interests:</label>
+        <input type="text" id="hobbies" name="hobbies" placeholder="e.g. Coding, Blogging, Cycling" />
+
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select name="contact-method" id="contact-method">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="message">Messaging App</option>
+        </select>
+       <hr/>
+          <!--  Submit & Reset -->
+      <div class="form-actions">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+       
+
+    <!-- Footer -->
+    <footer>
+      <p>Developed by <strong>Dipisha</strong> – <a href="https://github.com/deepsha-3" target="_blank">Visit Github</a></p>
+    </footer>
+  </main>
+</body>
+</html>

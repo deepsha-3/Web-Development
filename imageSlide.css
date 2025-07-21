@@ -1,0 +1,101 @@
+/* 🌼 Base Page Styling */
+body {
+  font-size: 100%;
+  background: #f1f1f1;
+}
+
+/* 🎞️ Slider Container */
+.slider {
+  position: relative;
+  margin: 3rem auto;
+  overflow: hidden;
+  width: 40.625rem;
+  height: 600px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* 📽️ Slider Track */
+.slider__list {
+  position: absolute;
+  left: 0;
+  width: 162.5rem; /* 4 slides x 40.625rem */
+}
+
+/* 🖼️ Individual Slides */
+.slider__slide {
+  float: left;
+  width: 40.625rem;
+  height: 100%;
+}
+
+.slider__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* 🔁 Autoplay Keyframes */
+@keyframes autoplay {
+  0% { left: 0; }
+  25% { left: -40.625rem; }
+  50% { left: -81.25rem; }
+  75% { left: -121.875rem; }
+  100% { left: 0; }
+}
+
+/* 🎚️ Autoplay Activation */
+.slider__switch:checked + .slider > .slider__list {
+  animation: autoplay 10s infinite;
+}
+
+/* 🎛️ Control Toggle */
+.slider__control {
+  width: 4.5rem;
+  margin: 2rem auto 1rem;
+  font-family: sans-serif;
+}
+
+.slider__control label {
+  position: relative;
+  display: block;
+  width: 4.5rem;
+  height: 2rem;
+  background: #ddd;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.15s ease-out;
+}
+
+.slider__control label::before {
+  content: "autoplay";
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slider__control label::after {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: left 0.15s ease-out;
+}
+
+/* 🟢 Switch On Visual */
+.slider__switch:checked + .slider + .slider__control label {
+  background: #455a64;
+}
+
+.slider__switch:checked + .slider + .slider__control label::after {
+  left: 2.75rem;
+}

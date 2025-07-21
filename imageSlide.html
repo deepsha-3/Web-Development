@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="./images.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="imageSlide.css" />
 </head>
 <body>
-    <h1 style="margin-top: 150px; text-align: center">
-      Image Slider 
-</h1>
-<input
-    id="sliderSwitch"
-    class="slider__switch"
-    type="checkbox"
-    name="sliderSwitch"
-    hidden
-/>
-<div class="slider">
+  <h1 style="text-align: center; margin-top: 150px;">Image Slider</h1>
+
+  <input id="sliderSwitch" class="slider__switch" type="checkbox" hidden />
+
+  <div class="slider">
     <ul class="slider__list">
-        <li class="slider__slide">
-            <img src="" alt="Slide 1" />
-        </li>
-        <li class="slider__slide">
-            <img src="" alt="Slide 2" />
-        </li>
-        <li class="slider__slide">
-            <img src="" alt="Slide 3" />
-        </li>
-        <li class="slider__slide">
-            <img src="https://unsplash.it/650/420?image=921" alt="Slide 4" />
-        </li>
+      <li class="slider__slide"><img src="my1.jpg" alt="Slide 1" /></li>
+      <li class="slider__slide"><img src="my2.jpg" alt="Slide 2" /></li>
+      <li class="slider__slide"><img src="my3.jpg" alt="Slide 3" /></li>
+      <li class="slider__slide"><img src="my4.jpg" alt="Slide 4" /></li>
     </ul>
-</div>
-<div class="slider__control"><label for="sliderSwitch"></label></div>
-    
+  </div>
+
+  <div class="slider__control">
+    <label for="sliderSwitch"></label>
+  </div>
 </body>
 </html>

@@ -1,42 +1,42 @@
 body {
     font-size: 100%;
     background: #f1f1f1;
-} /* Fallback for hidden attribute */
+}                          /* Fallback for hidden attribute */
 hidden {
     display: none;
-} /** * Keyframes for autoplay */
+}                           /* Keyframes for autoplay */
 @-webkit-keyframes autoplay {
-    /* position of the first slide */
+                             /* position of the first slide */
     0% {
         left: 0;
-    } /* position of the second slide */
+    }                        /* position of the second slide */
     25% {
         left: -40.625rem;
-    } /* position of the third slide */
+    }                        /* position of the third slide */
     50% {
         left: -81.25rem;
-    } /* position of the fourth slide */
+    }                        /* position of the fourth slide */
     100% {
         left: -121.875rem;
     }
 }
 @keyframes autoplay {
-    /* position of the first slide */
+                            /* position of the first slide */
     0% {
         left: 0;
-    } /* position of the second slide */
+    }                       /* position of the second slide */
     25% {
         left: -40.625rem;
-    } /* position of the third slide */
+    }                       /* position of the third slide */
     50% {
         left: -81.25rem;
-    } /* position of the fourth slide */
+    }                       /* position of the fourth slide */
     100% {
         left: -121.875rem;
     }
-} /** * Slider */
+}                           /* Slider */
 .slider {
-    position: relative; /* top margin is for purposes of demo */
+    position: relative;    /* top margin is for purposes of demo */
     margin-top: 3rem;
     margin-right: auto;
     margin-left: auto;
@@ -52,7 +52,7 @@ hidden {
 }
 .slider__slide {
     float: left;
-} /** * Slider control */
+}                           /* Slider control */
 .slider__control {
     margin-right: auto;
     margin-left: auto;
@@ -103,7 +103,7 @@ hidden {
 }
 .slider__switch:checked + .slider > .slider__list {
     -webkit-animation-name: autoplay;
-    animation-name: autoplay; /* This will change the time it takes to move to next slide */
+    animation-name: autoplay;                /* This will change the time it takes to move to next slide */
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
